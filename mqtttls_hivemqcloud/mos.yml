@@ -1,0 +1,31 @@
+version: 1.0
+manifest_version: 2017-05-18
+
+libs_version: ${mos_version}
+modules_version: ${mos_version}
+mongoose_os_version: ${mos_version}
+
+tags:
+sources:
+filesystem:
+  - fs
+libs:
+  - origin: https://github.com/mongoose-os-libs/mjs
+  - origin: https://github.com/mongoose-os-libs/mqtt
+  - origin: https://github.com/mongoose-os-libs/rpc-service-config
+  - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+  - origin: https://github.com/mongoose-os-libs/rpc-uart
+  - origin: https://github.com/mongoose-os-libs/wifi
+config_schema:
+  - ["wifi.sta.ssid", ""]                             # The SSID for your WiFi network
+  - ["wifi.sta.pass", ""]                             # its password
+  - ["wifi.sta.enable", true]
+  - ["mqtt.enable", true]
+  - ["mqtt.server", "yarayarayara.hivemq.cloud:8883"] # the hostname for your cluster in HiveMQ Cloud
+  - ["mqtt.user", "username"]                         # a valid username setup in Active MQTT Credentials
+  - ["mqtt.pass", "Pass8word"]                        # the password for that username
+  - ["mqtt.ssl_ca_cert", "trustid-x3-root.pem"]       # The CA certificate for TLS server authentication
+
+platform: esp32 # if you are not using an ESP32, then change this or remove it
+build_vars:
+
