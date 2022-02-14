@@ -7,3 +7,4 @@ The CA certificate has been included, but it will surely expire really soon, so 
 The connection is TLS in server authentication mode, your devices need a valid user/password pair to be allowed access but nothing further.
 
 See [my blog](http://www.scaprile.com/2021/05/23/connecting-to-hivemq-cloud-basic/) for further info.
+Más información en [mi blog](http://www.scaprile.com/2022/02/14/conectandonos-a-hivemq-cloud-basic-con-mongoose-os/)
