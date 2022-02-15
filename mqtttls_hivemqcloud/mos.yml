@@ -23,8 +23,8 @@ config_schema:
   - ["mqtt.enable", true]
   - ["mqtt.server", "yarayarayara.hivemq.cloud:8883"] # the hostname for your cluster in HiveMQ Cloud
   - ["mqtt.user", "username"]                         # a valid username setup in Active MQTT Credentials
-  - ["mqtt.pass", "Pass8word"]                        # the password for that username
-  - ["mqtt.ssl_ca_cert", "trustid-x3-root.pem"]       # The CA certificate for TLS server authentication
+  - ["mqtt.pass", "password"]                        # the password for that username
+  - ["mqtt.ssl_ca_cert", "isrgrootx1.pem"]            # The CA certificate for TLS server authentication
 
 platform: esp32 # if you are not using an ESP32, then change this or remove it
 build_vars:
