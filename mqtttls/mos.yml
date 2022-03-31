@@ -1,0 +1,29 @@
+version: 1.0
+manifest_version: 2017-05-18
+
+libs_version: ${mos_version}
+modules_version: ${mos_version}
+mongoose_os_version: ${mos_version}
+
+tags:
+sources:
+filesystem:
+  - fs
+libs:
+  - origin: https://github.com/mongoose-os-libs/mjs
+  - origin: https://github.com/mongoose-os-libs/mqtt
+  - origin: https://github.com/mongoose-os-libs/rpc-service-config
+  - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+  - origin: https://github.com/mongoose-os-libs/rpc-uart
+  - origin: https://github.com/mongoose-os-libs/wifi
+config_schema:
+  - ["wifi.sta.ssid", ""]
+  - ["wifi.sta.pass", ""]
+  - ["wifi.sta.enable", true]
+  - ["mqtt.enable", true]
+  - ["mqtt.server", "ip:port"]
+  - ["mqtt.ssl_ca_cert", "ca.crt"]
+
+platform: esp32
+build_vars:
+
