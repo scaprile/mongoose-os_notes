@@ -6,7 +6,7 @@ This demo uses a set of certificates for the server, available [here](https://gi
 
 Device keys are included
 
-See my blog for further info.
+See [my blog](http://www.scaprile.com/2022/04/29/mqtt-over-tls-with-the-esp32-and-mongoose-os/) for further info.
 
 Más información en [mi blog](http://www.scaprile.com/2022/03/31/mqtt-sobre-tls-con-esp32-y-mongoose-os/).
 
